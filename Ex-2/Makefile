@@ -1,9 +1,9 @@
 CFLAGS = -Wall -Werror -Wextra
 CC = gcc
-FILES_ONE = ex-1_1.c functions.c
-FILES_TWO = ex-1_2.c functions.c
-FILES_THREE = ex-1_3.c functions.c
-FILES_FOUR = ex-1_4.c functions.c
+FILES_ONE = ex-2_1.c
+FILES_TWO = ex-2_2.c
+FILES_THREE = ex-2_3.c
+FILES_FOUR = ex-2_4.c
 
 ex_one: clean
 	$(CC) $(CFLAGS) $(FILES_ONE) -o ex_one
@@ -22,10 +22,10 @@ ex_four: clean
 	./ex_four
 
 style_check:
-	clang-format -n --style=google *.c *.h
+	clang-format -n --style=google *.c
 
 style_go:
-	clang-format -i --style=google *.c *.h
+	clang-format -i --style=google *.c
 
 clean:
 	rm -rf *.out
