@@ -23,10 +23,3 @@ void sum_one_bits(int num) {
   }
   printf("%d\n", sum);
 }
-
-void swap_bit(int num, int swap_num) {
-  int num_temp;
-  swap_num = swap_num << 16;
-  num_temp = num ^ swap_num;
-  print_bit(num_temp);
-}

@@ -5,6 +5,5 @@
 
 void print_bit(int num);
 void sum_one_bits(int num);
-void swap_bit(int num, int swap_num);
 
 #endif
