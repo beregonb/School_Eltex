@@ -1,11 +1,13 @@
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra ##comand DZ
 CC = gcc
-FILES_ONE = ex-4_1.c
+FILES_ONE = ex-5.c
 
-
+all: ex_one
 ex_one: clean
 	$(CC) $(CFLAGS) $(FILES_ONE) -o ex_one
-	./ex_one
+
+
+.PHONY: style_check style_go clean
 
 style_check:
 	clang-format -n --style=google *.c
