@@ -4,10 +4,10 @@ int main() {
   struct abonent *abon = NULL;
   int num, count = 0, max_abonent = 0;
 
-  print_menu();
-  scanf("%d", &num);
-
   while (num != 5) {
+    print_menu();
+    scanf("%d", &num);
+
     switch (num) {
       case 1:
         printf("\nДобавление абонента\n");
@@ -37,8 +37,6 @@ int main() {
         printf("ERROR. Incorrect input\n");
         break;
     }
-    print_menu();
-    scanf("%d", &num);
   }
   for (int i = 0; i < max_abonent; i++) {
     memory_abonent_free(&abon[i]);

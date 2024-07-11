@@ -1,7 +1,7 @@
 #include "functions.h"
 /**
  * @brief Функция вывода меню
- * 
+ *
  */
 void print_menu() {
   printf(
