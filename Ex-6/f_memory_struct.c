@@ -1,5 +1,10 @@
 #include "functions.h"
-
+/**
+ * @brief Функция выделения памяти для структуры или ее расширения
+ * 
+ * @param abon Указатель на структуру
+ * @param max_abonent_count Количество абонентов
+ */
 void memory_struct(struct abonent **abon, int max_abonent_count) {
   if (max_abonent_count == 1) {
     *abon =

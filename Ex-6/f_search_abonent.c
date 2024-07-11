@@ -1,7 +1,12 @@
 #include "functions.h"
-
+/**
+ * @brief Функция поиска абонента в телефонной книге
+ * 
+ * @param abon Указатель на структуру со всеми абонентами
+ * @param count Количество имен в телефонной книге
+ */
 void search_abonent(struct abonent *abon, int *count) {
-  char name[10];
+  char *name = (char *)malloc(sizeof(char) * 10);
   int flag = 1;
   printf("Введите имя абонента: ");
   scanf("%s", name);
@@ -15,4 +20,5 @@ void search_abonent(struct abonent *abon, int *count) {
   if (flag) {
     printf("Абонент не найден!!!\n");
   }
+  free(name);
 }

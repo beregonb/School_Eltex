@@ -1,5 +1,10 @@
 #include "functions.h"
-
+/**
+ * @brief Функция для удаления абонента из телефонной книги
+ * 
+ * @param abon Указатель на структуру со всеми абонентами
+ * @param count Количество имен в телефонной книге
+ */
 void delete_abonent(struct abonent *abon, int *count) {
   if (*count != 0) {
     char *name = (char *)malloc(sizeof(char) * 10);

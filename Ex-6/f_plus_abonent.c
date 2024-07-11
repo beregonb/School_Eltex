@@ -1,4 +1,10 @@
 #include "functions.h"
+/**
+ * @brief Функция для добавления абонента в телефонную книгу
+ * 
+ * @param abon Указатель на структуру
+ * @param count Свободный индекс
+ */
 void plus_abonent(struct abonent *abon, int *count) {
   if (*count < MAX_ABONENTS) {
     printf("Имя: ");

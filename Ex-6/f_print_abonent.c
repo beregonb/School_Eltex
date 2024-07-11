@@ -1,5 +1,10 @@
 #include "functions.h"
-
+/**
+ * @brief Функция вывода абонентов
+ * 
+ * @param abon Указатель на структуру со всеми абонентами
+ * @param count Количество имен в телефонной книге
+ */
 void print_abonent(struct abonent *abon, int count) {
   if (count == 0) {
     printf("Список пуст!!!\n");
