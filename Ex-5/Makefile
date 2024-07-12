@@ -1,4 +1,4 @@
-CFLAGS = -fno-stack-protector -no-pie
+CFLAGS = -fno-stack-protector -no-pie -g
 CC = gcc
 FILES_ONE = ex-5.c
 
@@ -22,3 +22,5 @@ clean:
 	rm -rf *.out
 	rm -rf *.gch
 	rm -rf ex_one
+	rm -rf file
+	rm -rf input.txt
