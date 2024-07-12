@@ -1,12 +1,15 @@
-CFLAGS = -Wall -Werror -Wextra ##comand DZ
+CFLAGS = -fno-stack-protector -no-pie
 CC = gcc
 FILES_ONE = ex-5.c
 
 all: ex_one
-ex_one: clean
+ex_one: clean input
 	$(CC) $(CFLAGS) $(FILES_ONE) -o ex_one
+	./ex_one < input.txt
 
-
+input:
+	$(CC) file.c -o file
+	./file
 .PHONY: style_check style_go clean
 
 style_check:

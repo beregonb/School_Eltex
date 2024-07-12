@@ -14,7 +14,7 @@ int main(void) {
     printf("Bad password!\n");
     exit(1);
   } else {
-    printf("Access granted!\n");  // Строка для которой нужно выяснить адрес
+    printf("Access granted!\n");
   }
   return 0;
 }
