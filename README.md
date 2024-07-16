@@ -7,4 +7,4 @@
 ## [5. Функции](https://github.com/beregonb/School_Eltex/tree/main/Ex-5)
 ## [6. Динамическая память](https://github.com/beregonb/School_Eltex/tree/main/Ex-6)
 ## [7. Статические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-7)
-## [8. Динамические библиотеки]()
+## [8. Динамические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-8)
