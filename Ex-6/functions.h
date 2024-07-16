@@ -1,10 +1,10 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <malloc.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define MAX_ABONENTS 100
 

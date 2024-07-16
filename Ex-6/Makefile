@@ -16,10 +16,10 @@ test:
 	$(CC) $(CFLAGS) $(TEST) -o test -lcheck -lm -lpthread -lrt
 
 style_check:
-	clang-format -n --style=google *.c
+	clang-format -n --style=google *.c *.h
 
 style_go:
-	clang-format -i --style=google *.c
+	clang-format -i --style=google *.c *.h
 
 clean:
 	rm -rf *.out

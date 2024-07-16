@@ -1,6 +1,7 @@
 CC = gcc
-FLAG= -c
-FLAG_STATIC= ar rc
+FLAG = -fPIC -c
+FLAG_DINAM = -shared -o
+FLAG_RUN=LD_LIBRARY_PATH=$$PWD:$$LD_LIBRARY_PATH 
 
 FILE_SUM = sum.c
 FILE_SUB = subtraction.c
@@ -9,31 +10,32 @@ FILE_MUL = multiplication.c
 FILE_OTHER = print_menu.c
 FILE_MAIN = main.c $(FILE_OTHER)
 
-all: libcalc.a calc
-	./calc
+all: run
 
-calc:
+run: libcalc.so calc
+	$(FLAG_RUN)./calc
+
+calc: $(FILE_MAIN) libcalc.so
 	$(CC) $(FILE_MAIN) -o calc -L. -lcalc
 
-libcalc.a: sum.o subtraction.o multiplication.o division.o
-	$(FLAG_STATIC) libcalc.a sum.o subtraction.o multiplication.o division.o
+libcalc.so: sum.o subtraction.o multiplication.o division.o
+	$(CC) $(FLAG_DINAM) libcalc.so sum.o subtraction.o multiplication.o division.o
 	$(MAKE) clean_lib
 
 sum.o: $(FILE_SUM)
-	$(CC) $(FLAG) $(FILE_SUM)
+	$(CC) $(FLAG) $(FILE_SUM) -o sum.o
 
 subtraction.o: $(FILE_SUB)
-	$(CC) $(FLAG) $(FILE_SUB)
+	$(CC) $(FLAG) $(FILE_SUB) -o subtraction.o
 
 multiplication.o: $(FILE_MUL)
-	$(CC) $(FLAG) $(FILE_MUL)
+	$(CC) $(FLAG) $(FILE_MUL) -o multiplication.o
 
 division.o: $(FILE_DIV)
-	$(CC) $(FLAG) $(FILE_DIV)
+	$(CC) $(FLAG) $(FILE_DIV) -o division.o
 
 clean: clean_lib
-	rm -rf libcalc.a
-	rm -rf calc
+	rm -rf libcalc.so calc
 
 clean_lib:
 	rm -rf *.o
