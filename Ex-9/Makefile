@@ -22,4 +22,3 @@ clean:
 	rm -rf *.txt
 	rm -rf *.gch
 	rm -rf ex_one
-	rm -rf ex_two
