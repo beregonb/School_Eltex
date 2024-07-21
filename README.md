@@ -8,3 +8,4 @@
 ## [6. Динамическая память](https://github.com/beregonb/School_Eltex/tree/main/Ex-6)
 ## [7. Статические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-7)
 ## [8. Динамические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-8)
+## [9. Виртуальная файловая система](https://github.com/beregonb/School_Eltex/tree/main/Ex-9)
