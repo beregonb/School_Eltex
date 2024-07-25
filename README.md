@@ -9,4 +9,4 @@
 ## [7. Статические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-7)
 ## [8. Динамические библиотеки](https://github.com/beregonb/School_Eltex/tree/main/Ex-8)
 ## [9. Виртуальная файловая система](https://github.com/beregonb/School_Eltex/tree/main/Ex-9)
-## [10. Процессы](https://github.com/beregonb/School_Eltex/tree/main/Ex-10)
+## [10. Управление процессами](https://github.com/beregonb/School_Eltex/tree/main/Ex-10)
